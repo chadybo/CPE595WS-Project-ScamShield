@@ -1,0 +1,20 @@
+{
+  "name": "cpe595ws-project-scamshield",
+  "version": "1.0.0",
+  "description": "ScamShield Project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadybo/CPE595WS-Project-ScamShield.git"
+  },
+  "license": "ISC",
+  "author": "Group 13",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "express-handlebars": "^9.0.4"
+  }
+}
