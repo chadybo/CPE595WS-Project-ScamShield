@@ -31,3 +31,13 @@ build/
 .idea/
 .vscode/
 *.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Trained models (rebuild with: cd ml && python train_baseline.py)
+ml/models/

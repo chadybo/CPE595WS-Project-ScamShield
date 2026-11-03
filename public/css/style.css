@@ -20,3 +20,37 @@ button {
   padding: 12px;
   cursor: pointer;
 }
+
+
+.error {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fde8e8;
+  color: #8a1c1c;
+}
+
+.result {
+  padding: 16px 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.result-phishing {
+  background: #fde8e8;
+  border: 1px solid #e5a3a3;
+}
+
+.result-legit {
+  background: #e6f4ea;
+  border: 1px solid #9fd3ae;
+}
+
+.analyzed {
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.analyzed-body {
+  white-space: pre-wrap;
+}

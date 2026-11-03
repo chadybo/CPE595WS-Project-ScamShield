@@ -1,0 +1,25 @@
+<section class="result {{#if isPhishing}}result-phishing{{else}}result-legit{{/if}}">
+  {{#if isPhishing}}
+    <h1>Likely phishing</h1>
+  {{else}}
+    <h1>Looks legitimate</h1>
+  {{/if}}
+  <p>Phishing probability: <strong>{{phishingPct}}%</strong></p>
+
+  {{#if warningSigns.length}}
+    <h2>Warning signs</h2>
+    <ul>
+      {{#each warningSigns}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</section>
+
+<details class="analyzed">
+  <summary>Message analyzed</summary>
+  <p><strong>Subject:</strong> {{subject}}</p>
+  <p class="analyzed-body">{{content}}</p>
+</details>
+
+<a class="button" href="/">Analyze another message</a>

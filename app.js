@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import { create } from "express-handlebars";
 import configRoutes from "./routes/index.js";

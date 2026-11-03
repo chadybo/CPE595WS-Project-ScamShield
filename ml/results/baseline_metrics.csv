@@ -1,0 +1,5 @@
+feature_set,split,accuracy,precision,recall,f1,false_negatives,false_positives
+A_all,val,1.0,1.0,1.0,1.0,0,0
+B_no_leaky_meta,val,0.9993333333333333,1.0,0.998330550918197,0.9991645781119465,1,0
+C_metadata_only,val,0.884,0.8535773710482529,0.8564273789649416,0.855,86,88
+app_text,val,1.0,1.0,1.0,1.0,0,0

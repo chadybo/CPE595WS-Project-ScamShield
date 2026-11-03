@@ -1,21 +1,27 @@
+<h1>Check a suspicious email</h1>
+<p>Paste the subject and body of an email to see whether it looks like phishing.</p>
+
+{{#if error}}
+  <p class="error" role="alert">{{error}}</p>
+{{/if}}
+
 <form action="/predict" method="POST">
-  <label for="subject">Enter email subject:</label>
+  <label for="subject">Email subject (optional):</label>
   <textarea
     id="subject"
     name="subject"
     placeholder="Paste the subject here"
-    rows="8"
-    required
-  ></textarea>
+    rows="2"
+  >{{subject}}</textarea>
 
-  <label for="content">Enter email content:</label>
+  <label for="content">Email content:</label>
   <textarea
     id="content"
     name="content"
     placeholder="Paste the email content here"
     rows="8"
     required
-  ></textarea>
+  >{{content}}</textarea>
 
   <button type="submit">Analyze Message</button>
 
