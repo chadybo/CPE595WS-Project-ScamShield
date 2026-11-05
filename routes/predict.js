@@ -23,14 +23,15 @@ router.post("/", async (req, res) => {
       body: JSON.stringify({ subject, content }),
       signal: AbortSignal.timeout(5000),
     });
-    if (!response.ok) throw new Error(`Model service returned ${response.status}`);
+    if (!response.ok)
+      throw new Error(`Model service returned ${response.status}`);
     const result = await response.json();
 
     return res.render("result", {
       title: "Result",
       subject,
       content,
-      isPhishing: result.label === "phishing",
+      isPhishing: result.label === "spam",
       phishingPct: Math.round(result.probability * 100),
       warningSigns: result.warning_signs,
     });
